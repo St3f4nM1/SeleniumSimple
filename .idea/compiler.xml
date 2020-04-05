@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Selenium_Simple_Framwork" />
+        <module name="SeleniumYoutube" />
       </profile>
     </annotationProcessing>
   </component>
