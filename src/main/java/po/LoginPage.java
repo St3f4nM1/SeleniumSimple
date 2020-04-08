@@ -23,6 +23,7 @@ public class LoginPage extends BasePage {
     }
 
     public void login(String user, String password) throws InterruptedException {
+        driver.findElement(By.id("user-name")).clear();
         driver.findElement(By.id("user-name")).sendKeys(user);
         Thread.sleep(5000);
         driver.findElement(By.id("password")).sendKeys(password);

@@ -11,7 +11,7 @@ import po.ProductPage;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-public class AcceptanceTestDrivenAutomationTests {
+public class LoginTest {
 
     private WebDriver driver;
 
@@ -45,7 +45,7 @@ public class AcceptanceTestDrivenAutomationTests {
         assertTrue(loginPage.isLoaded());
         loginPage.login("standard_user", "secret");
         String errorMessage = loginPage.getErrorMessage();
-        assertEquals(errorMessage, "this");
+        assertEquals(errorMessage, "Test");
 
     }
 
